@@ -1,4 +1,6 @@
-//Mohammed Abdul Hafeez Khan
+"""
+@author: Mohammed Abdul Hafeez Khan
+"""
 #include <stdio.h>
 #include <string>
 #include <conio.h>
