@@ -16,42 +16,38 @@ Enter password or enter 0 to go back
 ```
 The default set password is 123456.
 
-Once yuo enter the Admin, you can now create an account for a customer.
+Once you enter the Admin, you can now create an account for a customer.
 ```bash
 1. Make account
 2. go back
 ```
-
-
-
-A Menu Driven Program in C++ for a Banking System, in which there are two kinds of accounts for customers, one called as Savings and other as the Current Account. The Savings account provides compound interest and withdrawal facilities but no cheque book facilities. The current account provides cheque book facility but no interest. Current account holders should also maintain a minimum balance of 100 AED and if the balance falls below this level a service charge of 20 AED is imposed.  
-
-For examples,
-- Train a model only on SP500.csv; no embedding
+If you proceed to make an account, the Bank offers to kinds of accounts:
 ```bash
-python main.py --stock_symbol=SP500 --train --input_size=1 --lstm_size=128 --max_epoch=50
+1.make a current account
+2.make a savings account
+3.go back
 ```
-
-- Train a model on 100 stocks; with embedding of size 8
+For creating the Account, the Admin needs to:
 ```bash
-python main.py --stock_count=100 --train --input_size=1 --lstm_size=128 --max_epoch=50 --embed_size=8
+Enter name of customer
+Enter starting balance
+Enter account number
 ```
+For a savings account you also need to enter the interest rate for the customer. 
 
-- Start your Tensorboard
+After you make the account you can logout. And now the customer can login using his/her account number.  
 ```bash
-cd stock-rnn
-mkdir logs
-tensorboard --logdir ./logs --port 1234 --debug
+Enter account number or press 0 to go back
 ```
+Once the account number is entered, the customer can view their credentials and details of the account. 
 
-My python environment: 
-Python version == 2.7
+Now they can proceed further to deposit, withdraw and display the amount in their account. 
+```bash
+Enter 1 to deposit
+Enter 2 to withdraw
+Enter 3 to diplay balance
+Enter 4 to go back
 ```
-BeautifulSoup==3.2.1
-numpy==1.13.1
-pandas==0.16.2
-scikit-learn==0.16.1
-scipy==0.19.1
-tensorflow==1.2.1
-urllib3==1.8
-```
+The Savings account provides compound interest and withdrawal facilities but no cheque book facilities. The current account provides cheque book facility but no interest. Current account holders should also maintain a minimum balance of 100 AED and if the balance falls below this level a service charge of 20 AED is imposed.  
+
+Contributions are welcome. Feel free to take this repo as a reference and make implementations. Note that the data is lost once the program stops its execution, as a result you can work on integrating a database with timestamps, so that all the information can be stored and observed!    
